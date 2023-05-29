@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400;1,500;1,600;1,800&family=Secular+One&display=swap');
+:root {
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Poppins', sans-serif;
+    --font3: 'Secular One', sans-serif;
+
+    --color1: #030303;
+    --color2: #f0f8ff;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font2);
+}
+
+
+header {
+    height: 100vh;
+    background-color: #0E0303;
+    background-image: url('../imgs/festa.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+header > div {
+    color: var(--color2);
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(to top, #000 10%, transparent);
+}
+
+header > div > h1 {
+    font-family: var(--font1);
+    font-size: 3em;
+    text-indent: 8%;
+    letter-spacing: 4px;
+    padding-top: 5%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.507);
+}
+
+header > div > h2 {
+    font-family: var(--font1);
+    font-size: 2.5em;
+    text-indent: 10%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.356);
+}
+
+@media screen and (max-width: 550px) {
+    header > div > h1, header > div > h2 {
+        text-align: center;
+
+        text-indent: 0px;
+    }
+
+    main section.qualidade {
+        flex-direction: column;
+    }
+
+    main section.qualidade img {
+        width: 100vw;
+    }
+}
+
+main section.qualidade {
+    display: flex;
+    background-color: var(--color1);
+    color: var(--color2);
+    border-bottom: 50px solid var(--color1);
+}
+
+main section.qualidade > div {
+    padding: 25px;
+}
+
+main section.qualidade div div.msgs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 550px) {
+
+    main section.qualidade img {
+        max-width: 50vw;
+    }
+}
+
+main section.qualidade h3 {
+    font-family: var(--font1);
+    font-size: 2em;    
+    text-indent: 0.5em;
+    letter-spacing: 4px;
+}
+
+main section.qualidade div div.msgs p {
+    text-indent: 1em;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 2em;
+}
+
+main section.frase-img {
+    height: 400px;
+    background-color: var(--color1);
+    background-image: url('../imgs/trajados.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.frase-img h3 {
+    background-color: rgba(0, 0, 0, 0.685);
+    color: var(--color2);
+    padding: 15px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+section.mensagem {
+    max-width: 500px;
+    margin: 20px auto 30px;
+}
+
+section.mensagem div {
+    margin: 5px;
+}
+
+section.mensagem p.aspas {
+    font-family: var(--font3);
+    font-size: 5em;
+    position: relative;
+    top: 38px;
+}
+
+section.mensagem p.msg {
+    text-indent: 2em;
+    line-height: 1.8em;
+}
+
+section.mensagem p.autor {
+    text-align: end;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 0.8em;
+    padding: 8px 3px 3px;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 90px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p.autor {
+    font-size: 0.8em;
+    padding-top: 8px;
+}
+
+footer a {
+    color: var(--color2);
+    text-decoration: none;
+    font-weight: bold;
+}
